@@ -12,7 +12,7 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """
-    pass
+    return 5/0
 
 
 def lone_ranger(start, stop, step):
@@ -68,7 +68,8 @@ def super_asker(low, high):
     """
     pass
 
-if __name__ == "__main__":
+
+if__name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
     # It's NOT the official tests, they are in tests.py as usual.
     # Add to these tests, give them arguments etc. to make sure that your
