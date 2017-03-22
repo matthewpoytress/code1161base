@@ -66,7 +66,7 @@ def star_map():
         else:
             return "!"
 
-    return = map(star_or_bang. range(10))
+    return map(star_or_bang. range(10))
     return result
 
 

@@ -19,7 +19,7 @@ print(1+1, "is smaller than", 7 * 0.5, "is",
       (1 + 1) < (7 * 0.5), ", which is a relief!")
 
 
-def usefulFunction () :
+def usefulFunction():
     """print the current working directory.""
     print(os.getcwd())
 
