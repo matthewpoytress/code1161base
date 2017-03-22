@@ -114,7 +114,7 @@ for j in range(10):
     star_square.append(star_list)
 
     print(star_list)
-    return star_square
+return star_square
 
 
 

@@ -13,7 +13,7 @@ import string
 def getLetter(index):
     """Print the current working directory."""
     alphabet = string.ascii_lowercase + " "
-    return alphabet(index)
+    return alphabet[index]
 
 
 def week2exersise2():
