@@ -9,7 +9,7 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    return
+    return (a_number % 2) != 0
 
 
 def fix_it(moves=True, should_move=True):
@@ -23,17 +23,14 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    if moves and should_move:
-        return "no problem"
+    if moves == should_move:
+        return "No Problem"
     elif moves and not should_move:
-        return "duct tape"
-    elif not moves and not should_move:
-        return "no problem"
+        return "Duct Tape"
     elif not moves and should_move:
         return "WD-40"
     else:
         return "Somethings not right here mate, looks expensive"
-
 
 
 def loops_1a():
@@ -44,12 +41,11 @@ def loops_1a():
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
     star_list = []
-    for i in range (10):
+    for i in range(10):
         star_list.append("*")
 
     print(star_list)
     return star_list
-
 
 
 def star_map():
@@ -66,10 +62,8 @@ def star_map():
         else:
             return "!"
 
-    return map(star_or_bang. range(10))
+    return map(star_or_bang, range(10))
     return result
-
-
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -81,11 +75,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     E.g.: ['#', '#', '#', '#', '#']
     """
 
-    my_list + ()
+    my_list = []
     for i in range(number_of_items):
         my_list.append(symbol)
         return my_list
-
 
 
 def loops_2():
@@ -106,22 +99,20 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-star_square = []
-for j in range(10):
-    star_list = []
-    for i in range (10):
-        star_list.append("*")
+    star_square = []
+    for j in range(10):
+        star_list = []
+        for i in range(10):
+            star_list.append("*")
     star_square.append(star_list)
 
-    print(star_list)
-return star_square
-
+    return star_square
 
 
 def loops_3():
     """Make a rising block of numbers.
 
-    Return this:
+Return this:
     [
         ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1'],
@@ -140,7 +131,7 @@ def loops_3():
          so call str(number) to cast.
     """
     number_square = []
-    for  i in range(10):
+    for i in range(10):
         number_row = []
         for j in range(10):
             number_row.append(i)
