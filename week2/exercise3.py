@@ -152,7 +152,10 @@ def loops_4():
     """
     number_square = []
     for i in range(10):
-        number_square.append(range(10))
+        number_row = []
+        for j in range(10):
+            number_row.append(str(j))
+        number_square.append(number_row)
 
     return number_square
 
@@ -182,7 +185,7 @@ def loops_5():
     number_square = []
     for i in range(10):
         coordinates_row = []
-        for j in range(10):
+        for j in range(5):
             coordinates_row.append('(i{}, j{})'.format(i, j))
         number_square.append(coordinates_row)
 
@@ -214,7 +217,7 @@ def loops_6():
     for i in range(10):
         row = []
         for j in range(i + 1):
-            row.append(j)
+            row.append(str(j))
         the_wedge.append(row)
     return the_wedge
 
@@ -240,7 +243,21 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
+    pyramid = []
+
+    for i in range(5):
+
+        row = []
+
+        for j in range(1):
+
+            whatamidoing = '{0}{1}{0}'
+
+            row.append(whatamidoing.format(' '*(5-i-1), '*'*(i*2+1)))
+
+        pyramid.append(row)
+
+    return pyramid
 
 
 def lp(some_kind_of_list, exercise_name):
