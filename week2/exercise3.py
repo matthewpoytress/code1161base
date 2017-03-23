@@ -62,7 +62,7 @@ def star_map():
         else:
             return "!"
 
-    return map(star_or_bang, range(10))
+    result = map(star_or_bang, range(10))
     return result
 
 
@@ -74,11 +74,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-
     my_list = []
     for i in range(number_of_items):
         my_list.append(symbol)
-        return my_list
+    return my_list
 
 
 def loops_2():
@@ -101,10 +100,7 @@ def loops_2():
     """
     star_square = []
     for j in range(10):
-        star_list = []
-        for i in range(10):
-            star_list.append("*")
-    star_square.append(star_list)
+        star_square.append(loops_1c(number_of_items=10, symbol="*"))
 
     return star_square
 
